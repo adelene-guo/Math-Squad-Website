@@ -6,57 +6,354 @@
   <meta name="viewport" content="width=device-width">
   <link href="style.css" rel="stylesheet" type="text/css">
   <link href="navbar.css" rel="stylesheet" type="text/css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body style="overflow-y: visible; overflow-x: visible; background-image: none; background-color: gray;">
-<script src="frontpage.js"></script>
-
- <title>Math Squad</title>
+<script src="matches.js"></script>
+  <title>Math Squad</title>
   <br><br>
   <!-- Navbar -->
-<ul>
-	<li>
-    <div class="column" style="width:10%;"><br></div>
-    <a href="index.html"><img src="logo.png" width="20%"></a>
-  </li><br>
+  <ul>
+    <li>
+      <div class="column" style="width:8%;"><br></div>
+      <a href="index.html"><img src="logo.png" width="20%"></a>
+    </li><br>
+    <br><br>
+    <div class="column" style="width:14%;"><br></div>
+    <li><a href="team.html">The Squad</a></li>
+    <li><a href="contacts.html">Contact Us</a></li>
+  </ul>
+  <div class="column" style="width:70%;"></div>
+
+  <div>
+    <select id="mathlevel" onchange="mathlevel();">
+      <option value="">Your Math Level</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">3i</option>
+      <option value="5">4</option>
+      <option value="6">4i</option>
+      <option value="7">5</option>
+      <option value="8">5i</option>
+      <option value="9">6</option>
+    </select>
+
+    <select id="frees" onchange="frees();">
+      <option value="">Your Free Period</option>
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+      <option value="D">D</option>
+      <option value="E">E</option>
+      <option value="F">F</option>
+      <option value="G">G</option>
+      <option value="H">H</option>
+    </select>
+  </div>
+
+  <center>
+    <h1 style="color: white;">The Squad</h1>
+  </center>
+  <h5 style="font-size: 20px;">Select your math level and free period, and look through the bios of available tutors.
+    When you're ready, fill out <a href="https://forms.gle/mbpXN73JS5rVVxNS7">this form</a> to request a tutor</h5>
   <br><br>
-  <div class="column" style="width:10%;"><br></div>
-  <li><a href="team.html">The Squad</a></li>
-  <li><a href="contacts.html">Contact Us</a></li>
-</ul>
-<div class="column" style="width:70%;"></div>
-  
-<div id = "filter">
-  <select class = "form-control">
-  <option>Your Math Level</option>
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>3i</option>
-  <option>4</option>
-  <option>4i</option>
-  <option>5</option>
-  <option>5i</option>
-  <option>6</option>
-  </select>
-  
-  <select class = "form-control">
-  <option>Your Free Period</option>
-  <option>A</option>
-  <option>B</option>
-  <option>C</option>
-  <option>D</option>
-  <option>E</option>
-  <option>F</option>
-  <option>G</option>
-  <option>H</option>
-  </select>
-</div>
-  
-<h5 style="font-size: 20px;">Look through this catalog. When you're ready, fill out <a href="https://forms.gle/mbpXN73JS5rVVxNS7">this form</a> to request a tutor</h5>
+  <div class="container">
+
+    <div class="filterDiv 1 2 4 6 8 B H">
+      <br>
+      <img src="angelina.jpg" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Angelina Peng '23</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Angelina Peng</h2>
+        <h3>For as long as I can remember, math has always been one of my favorite subjects. I’ve always loved the challenge that comes with difficult questions, as I love the process of applying different methods and mathematical concepts as well as the satisfaction that comes with resolving said questions. When I first came to CPS, I definitely disliked the Exeter method with a passion, because it was nothing like I had ever experienced and it was a lot harder for me to approach. Now, I absolutely love how the math curriculum is structured, as I enjoy having to learn concepts by puzzling through questions and having to prove theorems and mathematical equations on my own. Other than just having a passion for math, I absolutely love tutoring, so don’t hesitate to schedule a meeting or just talk to me if you need any help. I always have B free and G & H sometimes, but would also be happy to meet during lunch, Faculty Collab, etc. Feel free to reach out if you have any questions at all by emailing me at apeng@college-prep.org!</h3>
+      </div>
+    </div>
+
+    <div class="filterDiv C 1 2 4 6">
+      <br>
+      <img src="adie.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Adie Guo '24</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Adie Guo</h2>
+        <h3>I’ve grown up with math and I do indeed love math not only for the satisfaction it brings, but the discussions it brings. Facilitating an environment of friendly debate as well as guiding others to the solution is my kind of teaching. I’m extremely open to help with questions about the school program and questions outside of it too. If you are up to heated discussions or just chilling doing math, please reach out! I strongly suggest meeting up with someone if you ever need anything in general!</h3>
+      </div>
+    </div>
+
+    <div class="filterDiv G H 1  2  3  4  6 7 8">
+
+      <br>
+      <img src="derek.png" alt="Avatar" style="width:170px; height:170px;" class="center" class="center">
+      <h4>Derek Wang '23</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Derek Wang</h2>
+        <h3>Hello everyone! I’m Derek and I’m a senior in Math 6. Math has always been one of my favorite subjects and general areas of study. When I first came to CPS, the Exeter method did not click instantly, as I was more used to listening to structured lectures; however, over time I’ve grown to love solving problems above all else, since they help me learn the best, and the feeling of pleasure after correctly answering a challenging question is always worth it. I feel that the best way to learn any math problem is not always by getting directly to the solution, but rather learning different approaches and finding which one works best for a given problem. Throughout my math journey, I’ve always had sources of help by my side, whether those were peers, parents, or teachers, and I’d love to reciprocate the support I’ve received to anyone who may need it on problems, concepts, or anything math-related. I am free during most G and H Blocks and am more than happy to meet/chat with anyone during lunches or unused community blocks. My email is dwang@college-prep.org; please don't hesitate to reach out!</h3>
+      </div>
+    </div>
+
+    <div class="filterDiv 1  2    3  4  5  6  7  8 G">
+
+      <br>
+      <img src="julianchen.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Julian Chen '24</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Julian Chen</h2>
+        <h3>Hello! My name is Julian, and I'm a junior in math 5i! I'm so excited to be a math squad tutor again this year, and to help you with whatever math-related problems you have, be them big or small. Starting high school online, I know the struggles of plunging head-first into the Exeter method; I mean, teaching yourself math?? But I've found that learning the concepts yourself leads to a fuller and deeper understanding in the end. If you work with me, you'll find that I ask you many questions; so many questions that you'll end up feeling like the math tutor yourself! But most importantly, I want to make math enjoyable and fun, as it is for me! Confidence is everything, and I know you can become that "math person"! So please feel free to text me at (510)-230-3937 or email me at jchen@college-prep.org if you want to meet one on one. See you soon! </h3>
+      </div>
+    </div>
+
+    <div class="filterDiv 1  2    3  4 H D">
+      <br>
+      <img src="loula.jpg" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Loula Barnes '24</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Loula Barnes</h2>
+        <h3>Hi, I'm Loula, a junior in math 4i! I love helping out friends with math, and I'm excited to chat with some new people through math squad. Sometimes the methods we learn in math don't feel intuitive, so I'll try to guide you through the logic behind the formulas and steps to demystify them.</h3>
+      </div>
+    </div>
+
+    <div class="filterDiv 1  2    3  4  5  6  7  8 A">
+
+      <br>
+      <img src="arnav.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Arnav Ratna '24</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Arnav Ratna</h2>
+        <h3>Hey everyone! I'm Arnav, and I'm a junior. I really love answering questions, whether they're about a specific problem, a general concept, or even some cool property of math. You can email me at aratna2@college-prep.org or text me at 510-358-0035 to schedule a meeting. I look forward to helping you!</h3>
+      </div>
+    </div>
+
+    <div class="filterDiv 1  2    3  4  5  6 B H">
+
+      <br>
+      <img src="alessandra.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Alessandra Sabelli '24</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Alessandra Sabelli</h2>
+        <h3>Hey y’all! I’m Alessandra and I’m a junior in 5i. 
+While I’ve always loved learning math, CPS's Exeter method was a big adjustment for me. I owe so much to my amazing peers for their help and patience. I'd love to pass that patience and compassion along to anyone who needs help with anything math-y!</h3>
+      </div>
+    </div>
 
 
-  
+
+    <div class="filterDiv 1  2    3  4  5  6  7  8 H">
+
+      <br>
+      <img src="araddhya.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Araddhya Tibrewall '24</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Araddhya Tibrewall</h2>
+        <h3>Ahoy! I'm Araddhya, and I'm a junior in Math 5i, who—duh—loves math. Unlike most normal people, I won't give you answers, but will ask questions to your questions until you've reached the solution, so you feel pride and accomplishment and all those warm fuzzy feelings. Helping you > doing my HW.</h3>
+      </div>
+    </div>
+
+    <div class="filterDiv 1  2    3  4  5 A G">
+
+      <br>
+      <img src="natalie.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Natalie Goldberg '24</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Natalie Goldberg</h2>
+        <h3>Hey my name is Natalie and I am extremely excited to be able to teach and help others! I love to have discussions as a way to get to know others and meet knew people. In terms of my teaching philosophy I tend to be patient and try to understand the thinking of others. What is most beneficial for me and my students is for them to explain how they perceive a certain problem, and go on from there. I can't wait to have meeting with people and hope that it's both helpful and fun for others! </h3>
+      </div>
+    </div>
+
+    <div class="filterDiv 1  2    3  4  5  6  7  8 C E">
+
+      <br>
+      <img src="zane.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Zane Qureshi '24</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Zane Qureshi</h2>
+        <h3>Hey y'all! I'm Zane, a junior in math 5i, and I'm super excited to be in Math Squad again this year! I've always loved learning math, so I cannot wait to help you this year! I love explaining specific theorems and concepts, but I also enjoy talking about specific problems that are giving you issues. I try to guide people through solutions and allow them to discover as much of the solution as possible, so you are still solving the problem, not me. I'll help you with as many questions as you can think of and I like keeping things chill and fun! If you see me around, don't hesitate to talk to me or you can shoot me an email and we can schedule something!</h3>
+      </div>
+    </div>
+
+    <div class="filterDiv 1  2    3  4  5  6 H">
+
+      <br>
+      <img src="katie.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Katie Wendelken '24</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Katie Wendelken</h2>
+        <h3>I'm a very patient teacher, and I like to hear all of your thoughts on the problem and responding to those before giving my own suggestions.</h3>
+      </div>
+    </div>
+
+    <div class="filterDiv 1  2    3  4  5  6 B F">
+
+      <br>
+      <img src="henry.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Henry Gustafson '24</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Henry Gustafson</h2>
+        <h3>Hi! I'm Henry and I'm a junior in Math 5i (AP Calculus BC). I have always loved math, but I know it can be a very challenging subject. Math at College Prep can be especially difficult if you are stuck on a problem, but I think it is important to be patient because when you can find the solution to a problem yourself, you can get a really deep understanding of the concept. I'd love to help you work through any problems you are stuck on! I'm free F block, B3, and open periods/lunches. Feel free to email me at hgustafson@college-prep.org (or text: 415-730-8494). </h3>
+      </div>
+
+    </div>
+
+    <div class="filterDiv 1  2    3  4  5  6  7  8 A">
+
+      <br>
+      <img src="katelyn.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Katelyn Ma '24</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Katelyn Ma</h2>
+        <h3>Hi! I'm Katelyn, and I am currently a junior taking Math 6 with Kevin. I've always enjoyed math, and it's been one of my favorite classes since elementary school. When understanding concepts in math, I like to break them down into smaller pieces so that the whole pictures makes more sense. I also believe that talking things through is one of the best ways to understand something! I love helping people, so if you ever need help with anything math-related, please feel free to contact me at kma@thecollegepreparatoryschool.org or 415-370-1815. I'm always happy to help!</h3>
+      </div>
+    </div>
+
+    <div class="filterDiv 5  6  7  8 F H">
+
+      <br>
+      <img src="rahim.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Rahim Malik '23</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Rahim Malik</h2>
+        <h3>Hi there! I’m Rahim and I’m a senior in Math 6. I find math pretty fun, but when I don't understand it, it's pretty much a nightmare. I like teaching visually, mainly because I'm a visual learner. A typical meeting with me with involve lots of us both doing math on whiteboard tables. We'll go through one or two practice problems together, then you'll do a few practice problems yourself to nail in the concept. 
+<br><br>
+My free periods are F and H2, but most lunches work for me too. Email me at rmalik@college-prep.org!</h3>
+      </div>
+    </div>
+
+    <div class="filterDiv 2    3  4  5  6  7  8 G H">
+
+      <br>
+      <img src="finn.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Finn McKibbin '23</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Finn McKibbin</h2>
+        <h3>I am super excited to be one of your Math Squad tutors this year! I think the CPS math curriculum especially emphasizes understanding the concepts at large, which is why it can feel so impenetrable at times. My goal as a tutor is to help you over this barrier by simplifying and making these concepts feel intuitive, while still letting you be the one who solves the problem, so that you feel practiced and confident when applying that concept to new problems down the road. I want to supplement the often indirect way the problem sets introduce new topics with direct and patient discussion where we can clarify exactly what you are unsure about.
+<br><br>
+I love thinking about math, but I love talking about math with others even more, so if you ever feel like something in math giving you a challenge, even if you're not sure what it is or don't have a homework problem to solve it, that is okay! Please sign up during one of my free slots, and I'd be happy to talk about it with you :)</h3>
+      </div>
+    </div>
+
+
+
+
+    <div class="filterDiv 1  2    3  4  5  6  7  8 G H">
+      <br>
+      <img src="jiaqi.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Jiaqi Yu '23</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Jiaqi Yu</h2>
+        <h3>Hi! I’m Jiaqi and I’m a senior in math 6.
+<br>
+I really love math and the satisfaction that comes from solving a problem. The Exeter system that CPS uses can certainly be difficult at first (and it definitely was for me), but I’ve come to understand and appreciate it over the course of the past couple years. I’ve also always loved helping people with math since middle school. I’d be more than happy to help anyone tackle homework they’re having trouble with. I’d be happy to help during G, H blocks or lunch. I have things scheduled during H blocks about half of the time, so try to check in with me first! Feel free to email me at jyu@college-prep.org or text me at (510)361-9972 if you want to meet!</h3>
+      </div>
+    </div>
+
+    <div class="filterDiv 1  2    3  4  5  6  7  8 A G">
+
+      <br>
+      <img src="jude.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Jude Partovi '23</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Jude Partovi</h2>
+        <h3>Hi all, my name is Jude and I'm a senior. Aside from doing math homework, my hobbies are coding, guitar and volleyball. As a math tutor, I will help you find out the answer yourself, not just give it to you. I believe that math isn't about memorizing equations or solutions, but rather about deeply understanding methods and thus being able apply them dynamically to an array of scenarios. Come to me with any questions you have and I'm sure that together we can find the solution.</h3>
+      </div>
+    </div>
+
+    <div class="filterDiv  1  2    3  4  5  6  7  8 A G">
+
+      <br>
+      <img src="erin.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Erin Suh '23</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Erin Suh</h2>
+        <h3>Hello! Math here is hard. I have spent 4 hours on a single KhanAcademy set. I know how it feels to scrape by with a shaky understanding of the material and a frustrating inability to apply it on my own. But I have overcome all the concepts that plagued me, and I have picked up some study tricks along the way that I do not plan on keeping all to myself. If you need help, just ask! :)</h3>
+      </div>
+    </div>
+
+    <div class="filterDiv  1  2    3  4  5  6  7  8  9 C G H">
+
+      <br>
+      <img src="julianvuong.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Julian Vuong '23</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Julian Vuong</h2>
+        <h3>Hey everyone! I’m Julian, and I’m a senior. I'm in Math 6 right now, and I've taken 3BC (now 3i), 4i, and AP Calc BC (5i).
+<br><br>
+I have loved math for my whole life, and I mostly enjoy what happens in class (if you're here to rant about geometric probability, I agree: it makes no sense). I want to use my knowledge and enthusiasm to support you all in your classes, from understanding a tough concept to looking for some extra review before a big test (or multiple midterms), so that you can share my passion for math too.
+<br><br>
+I’m more than happy to help with any questions you have or to just talk! I’m free during C block and sometimes during G and H blocks, so make sure to check with me in advance to confirm. Please don’t hesitate to reach out! Feel free to contact me at jvuong@college-prep.org or (925) 548-3035. See you soon!</h3>
+      </div>
+    </div>
+
+
+
+
+    <div class="filterDiv  1  2    3  4  5  6  7  8  9 G H">
+
+      <br>
+      <img src="william.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>William Pirone '23</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>William Pirone</h2>
+        <h3>Hey! I'm William, and I like to teach by solving problems by simplifying them down into easier, more digestible components to come up with an easy-to-follow solution. I also enjoy proofs, word problems, and all things calculus. Feel free to reach out if you have any questions! </h3>
+      </div>
+    </div>
+
+    <div class="filterDiv 1  2    3  4  5  6 E H">
+
+      <br>
+      <img src="quinn.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Quinn Cook '24</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Quinn Cook</h2>
+        <h3>I like having fun (because yes math can be fun) and eating snacks. </h3>
+      </div>
+    </div>
+
+      <div class="filterDiv 1  2 3  4  5 G H">
+
+      <br>
+      <img src="christian.png" alt="Avatar" style="width:170px; height:170px;" class="center">
+      <h4>Christian Park '23</h4>
+      <div class="myDIV"><img src="bio.png" style="width:45%;"></div>
+      <div class="popup hide">
+        <h2>Christian Park</h2>
+        <h3>I believe that math gets tough, especially at this school, but that each student has it in them to work through the challenges, and that sometimes it takes a little guiding.</h3>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br><br>
+<table class="tablecenter">
+<tr>
+<td>
+  <h4>Website by Adie Guo '24</h4>
+</td>
+<td>
+<a href="matches.html"><img src="github.png" width="10%"></a>
+</td>
+</tr>
+</table>
+</body>
+
+</html>
