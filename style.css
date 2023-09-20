@@ -121,7 +121,7 @@ color:white;
 
 
 .equations1 {
-  height: 120px;	
+  height: 150px;	
   overflow: hidden;
   position: relative;
  }
@@ -155,7 +155,7 @@ color:white;
 @keyframes equations1 {
  0%   { 
  -moz-transform: translateX(100%); 
- -webkit-transform: translateX(100%); 
+ -webkit-transform: translateX(100%);
  transform: translateX(100%); 		
  }
  100% { 
