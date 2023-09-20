@@ -120,11 +120,11 @@ color:white;
 }
 
 
-.equations1{
-   height: 80px;	
- overflow: hidden;
- position: relative;
-}
+.equations1 {
+  height: 120px;	
+  overflow: hidden;
+  position: relative;
+ }
 .equations1 h3{
 font-family: 'Roboto Mono';
 font-size: 30px;
